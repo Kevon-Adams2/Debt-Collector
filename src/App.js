@@ -12,6 +12,7 @@ class App extends Component {
       debtors: [],
       debtor: '',
       owed: Number,
+      completed: false,
     };
   }
 
@@ -38,11 +39,27 @@ class App extends Component {
     this.setState({debtors:copy})
   }
 
+  strikeThrough(id) {
+    let strike = [...this.state.debtors];
+    strike[id].completed = !strike[id].completed;
+    this.setState({debtors:strike})
+  }
+  
+
   render() {
     const debtors = this.state.debtors.map((collect, i) => (
-      <div key={ `${i} ${collect.debtor} ${collect.owed}`}>
+      <div key={ `${i} ${collect.debtor} ${collect.owed} ${collect.completed}`}>
+        
+        <div className={`this.state ${this.completed && 'checked-item'}`}>
+          <div onClick={ () => this.strikeThrough(i)}>
+            {this.completed && (
+              <span>{collect.completed}</span>
+            )}
+          </div>
+        </div>
+        
         <span>{collect.debtor}</span>
-        <span>${collect.owed}</span>
+        <span>{collect.owed}</span>
         {console.log(i)}
         <button onClick={ () => this.removeDebtor(i)}>Delete</button>
       </div>
