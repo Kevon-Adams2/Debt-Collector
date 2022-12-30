@@ -77,3 +77,7 @@
   padding-top: 10px;
   background-color: darkcyan;
 }
+
+.checked-item {
+  text-decoration: line-through;
+}
