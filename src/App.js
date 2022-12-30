@@ -24,13 +24,17 @@ class App extends Component {
     this.setState({owed: value});
   }
 
+  updateCompleted(value) {
+    this.setState({completed: value});
+  }
+
   addDebtors() {
-    const {debtors, debtor, owed} = this.state;
+    const {debtors, debtor, owed, completed} = this.state;
 
     let newDebtors = debtors.slice();
-    newDebtors.push({debtor, owed});
+    newDebtors.push({debtor, owed, completed});
 
-    this.setState({debtors: newDebtors, debtor: '', owed: Number});
+    this.setState({debtors: newDebtors, debtor: '', owed: Number, completed: false});
   }
 
   removeDebtor(id) {
