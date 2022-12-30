@@ -1,5 +1,5 @@
 # Debt Collector
-#### Video Demo:  <URL HERE>
+#### Video Demo:  https://youtu.be/ki2hPO2q8PU
 #### Description:
 My app, Debt Collector, is an app that is designed to keep track of what is owed to people. It is a React app using different components. The main component is the App.js component. It imports the Heading, Lefty, and Righty components. Heading, Lefty, and Righty were done to practice CSS styling. Using text-align and margin properties to line up the heading. Lefty is similar to Heading but fills out the screen. And since components align left by default, I only had to adjust width. Righty, however, had to be styled to float right. Other than that it is similar to Lefty. Once importing Heading, Lefty, and Righty I had to be sure to render the components in the right order to get the desired effect.
 
