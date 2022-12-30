@@ -1,70 +1,8 @@
-# Getting Started with Create React App
+# Debt Collector
+#### Video Demo:  <URL HERE>
+#### Description:
+My app, Debt Collector, is an app that is designed to keep track of what is owed to people. It is a React app using different components. The main component is the App.js component. It imports the Heading, Lefty, and Righty components. Heading, Lefty, and Righty were done to practice CSS styling. Using text-align and margin properties to line up the heading. Lefty is similar to Heading but fills out the screen. And since components align left by default, I only had to adjust width. Righty, however, had to be styled to float right. Other than that it is similar to Lefty. Once importing Heading, Lefty, and Righty I had to be sure to render the components in the right order to get the desired effect.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In App.js is a class component that uses a constructor function to fill an empty array with user created data. The "debtors" property is the empty array that gets loaded with data. The "debtor" property is a string value, the "owed" property is a number value, and the completed property is a boolean value. The methods updateDebtor, updateOwed, and updateCompleted are for rendering the values of the "debtors" array using setState. The addDebtors method is to give the "Add Debtor" button functionality. When a debtor is created, an option to delete the debtor renders along with it. The removeDebtor method creates the functionality for the "Delete" button. 
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The strikeThrough method was a stretch goal that I experimented with. The goal was to create a checkbox that would use CSS to toggle a line-through text-decoration for the debtors. I could not quite figure it out. My goal was to practice and expand skills, but I’m not quite there yet.
